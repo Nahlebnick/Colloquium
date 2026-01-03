@@ -13,10 +13,9 @@ std::vector<unsigned long long> factorials(unsigned int n)
     return result;
 }
 
-template <typename T>
-std::vector<T> unique_preserve(const std::vector<T>& seq)
+std::vector<int> unique_preserve(const std::vector<int>& seq)
 {
-    std::vector<T> out;
+    std::vector<int> out;
     out.reserve(seq.size());
     for (const auto& item : seq)
     {
